@@ -1,0 +1,46 @@
+{
+  "name": "ts-express-validator",
+  "version": "0.0.1",
+  "description": "Express JSON body autovalidator for TypeScript.",
+  "main": "lib/index.js",
+  "dependencies": {
+    "reflect-metadata": "^0.1.10",
+    "typescript-son": "0.0.4"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.16.5",
+    "@types/chai": "^4.0.4",
+    "@types/chai-http": "^3.0.2",
+    "@types/express": "^4.0.37",
+    "@types/mocha": "^2.2.42",
+    "awesome-metadata": "0.0.1",
+    "body-parser": "^1.17.2",
+    "chai": "^4.1.1",
+    "chai-http": "^3.0.0",
+    "express": "^4.15.4",
+    "mocha": "^3.5.0"
+  },
+  "peerDependencies": {
+    "awesome-metadata": ">=0.0.4",
+    "express": "4.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilezek/ts-express-validator.git"
+  },
+  "keywords": [
+    "typescript",
+    "express",
+    "validator",
+    "tson"
+  ],
+  "author": "Ezequiel Santamaria Navarro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lilezek/ts-express-validator/issues"
+  },
+  "homepage": "https://github.com/lilezek/ts-express-validator#readme"
+}
