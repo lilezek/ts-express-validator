@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "Express JSON body autovalidator for TypeScript.",
   "main": "lib/index.js",
+  "module": "lib/index",
+  "typings": "lib/index",
   "dependencies": {
     "reflect-metadata": "^0.1.10",
     "typescript-son": "0.0.4"
