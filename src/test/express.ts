@@ -36,6 +36,7 @@ app.put("/age", jsonBodyParser(SetAge), (req, res) => {
 app.use((err: any, req: any, res: any, next: any) => {
   res.statusCode = 400;
   res.send({error: err.message});
+  next();
 });
 
 export const afterListen = new Promise((res, rej) => {
