@@ -35,12 +35,13 @@ export function functionValidator(fn: ValidatorFunction<any>) {
     }
     let validators = Reflect.getMetadata("ts-express-validator:validators", target);
     if (!validators) {
-      Reflect.defineMetadata("ts-express-validator:validators", validators = {} as any, target);
+      validators = {};
+      Reflect.defineMetadata("ts-express-validator:validators", validators as any, target);
     }
     if (!validators[propertyKey]) {
-      validators[propertyKey] = [];
+      validators[propertyKey] = [] as Array<ValidatorFunction<any>>;
     }
-    validators[propertyKey].push(fn);
+    (validators[propertyKey] as any).push(fn);
   };
 }
 

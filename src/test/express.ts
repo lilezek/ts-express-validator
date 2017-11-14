@@ -42,5 +42,3 @@ app.use((err: any, req: any, res: any, next: any) => {
 export const afterListen = new Promise((res, rej) => {
   app.listen(8081, res);
 });
-
-import "../metadata";
